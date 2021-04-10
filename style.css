@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    overflow: hidden;
+}
+header{
+    height: 80px;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    z-index: 1000;
+}
+header .area{
+    width: 100%;
+}
+header .area:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+header .area:nth-child(3){
+    display: flex;
+    justify-content: flex-end;
+}
+header .logo1{
+    height: 20px;
+}
+header .logo2{
+    height: 50px;
+}
+header i{
+    font-size: 30px;
+    cursor: pointer;
+}
+menu{
+    border-radius: 10px;
+    transition: .5s;
+    position: absolute;
+    color: #0f163b;
+    top: 50%;
+    left: 50px;
+    overflow: hidden;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+menu .option{
+    padding: 15px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.26);
+    transition: .4s;
+}
+menu .option:hover{
+    filter: brightness(.5);
+}
+.prevImg{
+    width: 40px;
+}
+.first-section{
+    width: 400vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+.first-section.um{
+    transform: translateX(0);
+}
+.first-section.dois{
+    transform: translateX(-100vw);
+}
+.first-section.tres{
+    transform: translateX(-200vw);
+}
+.first-section.quatro{
+    transform: translateX(-300vw);
+}
+.first-section .car{
+    width: 100vw;
+    height: 100%;
+    position: relative;
+}
+.first-section .car img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.first-section .car .titulo{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 35px;
+    color: #0f163b;
+    z-index: 10000;
+    font-weight: 800;
+}
+.first-section .car .infos{
+    position: absolute;
+    z-index: 1000;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.425);
+}
+.first-section .car .infos .info{
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+.first-section .car .infos .info h2{
+    font-weight: 800;
+}
+.first-section .car .infos .info h5{
+    font-weight: 600;
+}
